@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Test your knowledge with this fun online quiz app.">
+  <title>QuizSpark | Online Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <a class="logo" href="index.html">
+        <span class="logo-icon">Q</span>
+        QuizSpark
+      </a>
+      <span class="tag">GENERAL KNOWLEDGE</span>
+    </header>
+
+    <section class="hero" id="hero">
+      <div class="hero-icon">✦</div>
+      <p class="eyebrow">LEARN SOMETHING NEW</p>
+      <h1>Challenge your<br><span>knowledge.</span></h1>
+      <p class="subtitle">
+        Answer 10 fun questions, test your skills, and see
+        how much you know.
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <span>❓</span>
+          <strong>10 Questions</strong>
+        </div>
+        <div class="feature">
+          <span>⚡</span>
+          <strong>Instant Feedback</strong>
+        </div>
+        <div class="feature">
+          <span>🏆</span>
+          <strong>Final Score</strong>
+        </div>
+      </div>
+
+      <button class="primary-btn start-btn" id="startBtn">
+        Start Quiz <span>→</span>
+      </button>
+      <p class="small-note">No pressure. Just have fun!</p>
+    </section>
+
+    <section class="quiz hidden" id="quiz">
+      <div class="quiz-meta">
+        <span id="questionCount">QUESTION 01 / 10</span>
+        <span class="score-pill">Score: <b id="liveScore">0</b></span>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <p class="eyebrow question-category">GENERAL KNOWLEDGE</p>
+      <h2 id="questionText">Question goes here</h2>
+      <p class="instruction">Choose the best answer below.</p>
+
+      <div class="options" id="options"></div>
+
+      <div class="feedback hidden" id="feedback" aria-live="polite"></div>
+
+      <button class="primary-btn next-btn hidden" id="nextBtn">
+        Next Question <span>→</span>
+      </button>
+      <p class="small-note">Think carefully. You've got this!</p>
+    </section>
+
+    <section class="result hidden" id="result" aria-live="polite">
+      <div class="result-icon" id="resultIcon">🏆</div>
+      <p class="eyebrow">QUIZ COMPLETED</p>
+      <h1 id="resultTitle">Well done!</h1>
+      <p class="subtitle" id="resultMessage"></p>
+
+      <div class="score-card">
+        <p>Your final score</p>
+        <div class="big-score">
+          <span id="finalScore">0</span><span class="score-total">/ 10</span>
+        </div>
+        <div class="result-track">
+          <div class="result-bar" id="resultBar"></div>
+        </div>
+        <p class="percentage" id="percentage">0%</p>
+      </div>
+
+      <button class="primary-btn restart-btn" id="restartBtn">
+        ↻ Try Again
+      </button>
+      <p class="small-note">Every question is a chance to learn.</p>
+    </section>
+
+    <footer>
+      <p>Made with <span class="heart">♥</span> and curiosity.</p>
+      <p>QuizSpark © 2026 · Beginner Web Project</p>
+    </footer>
+  </main>
+</body>
+</html>
